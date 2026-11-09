@@ -1,0 +1,8 @@
+
+/* Теорія ІТ-студій: адаптивна бічна панель */
+body.it-has-theory main#app{max-width:1360px;display:grid;grid-template-columns:minmax(220px,270px) minmax(0,1fr);align-items:start;gap:26px}
+body.it-has-theory main#app>.it-theory{grid-column:1;grid-row:1 / span 30;position:sticky;top:12px}
+body.it-has-theory main#app>:not(.it-theory){grid-column:2;min-width:0}
+.it-theory{border:1px solid #dfe7ef;background:#f8fbff;border-radius:14px;padding:17px;color:#142d50;font-size:15px;line-height:1.55}
+.it-theory summary{font-weight:800;cursor:pointer;font-size:17px}.it-theory p{font-size:14px;color:#54677c;margin:12px 0}.it-theory a{display:block;overflow-wrap:anywhere;padding:12px;background:#fff;border:1px solid #dfe7ef;border-radius:9px;text-decoration:none;color:#142d50;font-weight:650}.it-theory a:hover,.it-theory a:focus-visible{border-color:#142d50;text-decoration:underline}.it-theory .it-source{font-size:13px;color:#59697b;margin-top:9px}
+@media(max-width:850px){body.it-has-theory main#app{display:block}body.it-has-theory main#app>.it-theory{position:static;margin:0 0 20px}}
